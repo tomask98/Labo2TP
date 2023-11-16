@@ -13,10 +13,21 @@ namespace CordobaCineBack.Entidades
         public string Genero { get; set; }
 
 
-        public Generos(int id_genero,string genero)
+        public Generos(int id_genero, string genero)
         {
             Id_genero = id_genero;
             Genero = genero;
+        }
+
+        public Generos()
+        {
+            Id_genero = 0;
+            Genero = string.Empty;
+        }
+
+        public override string ToString()
+        {
+            return Genero.ToString();
         }
     }
 }

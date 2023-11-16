@@ -1,4 +1,5 @@
-﻿using CordobaCineBack.Entidades;
+﻿using CineCordobaBack.Entidades;
+using CordobaCineBack.Entidades;
 using CordobaCineBack.Fachada.Implementacion;
 using CordobaCineBack.Fachada.Interfaz;
 using Microsoft.AspNetCore.Mvc;
@@ -35,6 +36,21 @@ namespace CordobaCineApi.Controllers
             }
         }
 
-        
+        [HttpGet("/VentasVacaciones")]
+        public IActionResult GetEntregasSegunFecha(int genero,string vacaciones)
+        {
+            List<DetalleComprobante> lstvacas;
+            try
+            {
+                lstvacas = app.ObtenerConsultaVacacion(genero, vacaciones);
+                return Ok(lstvacas);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente luego.");
+            }
+        }
+
+
     }
 }

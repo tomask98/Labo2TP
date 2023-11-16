@@ -1,4 +1,5 @@
-﻿using CordobaCineBack.Datos.Implementacion;
+﻿using CineCordobaBack.Entidades;
+using CordobaCineBack.Datos.Implementacion;
 using CordobaCineBack.Datos.Interfaz;
 using CordobaCineBack.Entidades;
 using CordobaCineBack.Fachada.Interfaz;
@@ -22,6 +23,10 @@ namespace CordobaCineBack.Fachada.Implementacion
         public List<Generos> TraerGeneros()
         {
             return cineDao.ObtenerGeneros();
+        }
+        public List<DetalleComprobante> ObtenerConsultaVacacion(int genero, string vacacion)
+        {
+            return cineDao.ObtenerConsultaVacacion(genero, vacacion);
         }
     }
 }

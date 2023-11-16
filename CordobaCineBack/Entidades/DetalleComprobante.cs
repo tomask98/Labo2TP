@@ -9,13 +9,17 @@ namespace CineCordobaBack.Entidades
     public class DetalleComprobante
     {
         public int DetalleComprobanteId { get; set; }
-        public Funciones FuncionId { get; set; }
+        
+        public Funciones Funciones { get; set; }
+
+
         public Comprobantes ComprobantesId { get; set; }
         public decimal Precio { get; set; }
         public Promociones PromocionesId { get; set; }
 
         public DetalleComprobante()
         { 
+            
         }
     }
 }
