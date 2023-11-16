@@ -32,20 +32,20 @@
             button1 = new Button();
             button2 = new Button();
             dataGridView1 = new DataGridView();
-            groupBox1 = new GroupBox();
-            label1 = new Label();
-            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            textBox1 = new TextBox();
-            comboBox1 = new ComboBox();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
             ColId = new DataGridViewTextBoxColumn();
             ColPelicula = new DataGridViewTextBoxColumn();
             ColGenero = new DataGridViewTextBoxColumn();
             ColClasificacion = new DataGridViewTextBoxColumn();
             ColIdioma = new DataGridViewTextBoxColumn();
             ColEntradas = new DataGridViewTextBoxColumn();
+            groupBox1 = new GroupBox();
+            label3 = new Label();
+            label2 = new Label();
+            comboBox1 = new ComboBox();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            label4 = new Label();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             groupBox1.SuspendLayout();
@@ -59,7 +59,7 @@
             button1.Name = "button1";
             button1.Size = new Size(62, 28);
             button1.TabIndex = 0;
-            button1.Text = "button1";
+            button1.Text = "Salir";
             button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -69,7 +69,7 @@
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 1;
-            button2.Text = "button2";
+            button2.Text = "Buscar";
             button2.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
@@ -87,76 +87,6 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(714, 226);
             dataGridView1.TabIndex = 2;
-            // 
-            // groupBox1
-            // 
-            groupBox1.BackColor = Color.Transparent;
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(comboBox1);
-            groupBox1.Controls.Add(textBox1);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Location = new Point(130, 23);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(749, 182);
-            groupBox1.TabIndex = 3;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Filtros";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(74, 38);
-            label1.Name = "label1";
-            label1.Size = new Size(86, 19);
-            label1.TabIndex = 2;
-            label1.Text = "Vacacion";
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(183, 38);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(281, 23);
-            textBox1.TabIndex = 3;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(183, 108);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 4;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Century Gothic", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(74, 112);
-            label2.Name = "label2";
-            label2.Size = new Size(71, 19);
-            label2.TabIndex = 5;
-            label2.Text = "Genero";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(74, 57);
-            label3.Name = "label3";
-            label3.Size = new Size(102, 16);
-            label3.TabIndex = 6;
-            label3.Text = "verano/invierno";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(261, 440);
-            label4.Name = "label4";
-            label4.Size = new Size(480, 15);
-            label4.TabIndex = 4;
-            label4.Text = "Esta consulta traera las peliculas mas vistas durante las vacaciones de verano o de invieno ";
             // 
             // ColId
             // 
@@ -194,6 +124,76 @@
             ColEntradas.HeaderText = "Cantidad de entradas vendidas";
             ColEntradas.Name = "ColEntradas";
             ColEntradas.ReadOnly = true;
+            // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.Transparent;
+            groupBox1.Controls.Add(label3);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(comboBox1);
+            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(button2);
+            groupBox1.Location = new Point(130, 23);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(749, 182);
+            groupBox1.TabIndex = 3;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Filtros";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(74, 57);
+            label3.Name = "label3";
+            label3.Size = new Size(102, 16);
+            label3.TabIndex = 6;
+            label3.Text = "verano/invierno";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(74, 112);
+            label2.Name = "label2";
+            label2.Size = new Size(71, 19);
+            label2.TabIndex = 5;
+            label2.Text = "Genero";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(183, 108);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(121, 23);
+            comboBox1.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(183, 38);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(281, 23);
+            textBox1.TabIndex = 3;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(74, 38);
+            label1.Name = "label1";
+            label1.Size = new Size(86, 19);
+            label1.TabIndex = 2;
+            label1.Text = "Vacacion";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(261, 440);
+            label4.Name = "label4";
+            label4.Size = new Size(480, 15);
+            label4.TabIndex = 4;
+            label4.Text = "Esta consulta traera las peliculas mas vistas durante las vacaciones de verano o de invieno ";
             // 
             // pictureBox1
             // 

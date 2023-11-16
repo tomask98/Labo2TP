@@ -16,17 +16,22 @@ namespace CineFront.Presentacion
     public partial class FrmConsultarVacaciones : Form
     {
         private IAplicacion oAplicacion;
-        public FrmConsultarVacaciones( FabricaAplicacion oFabrica)
+        public FrmConsultarVacaciones(FabricaAplicacion oFabrica)
         {
-            
+
             InitializeComponent();
             oAplicacion = oFabrica.CrearAplicacion();
-            
+
         }
 
-        private void FrmConsultarVacaciones_Load(object sender, EventArgs e)
+        private async void FrmConsultarVacaciones_Load(object sender, EventArgs e)
         {
+            await CargarGeneroAsync();
+        }
 
+        private Task CargarGeneroAsync()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CordobaCineBack.Fachada
+namespace CordobaCineFront.Cliente
 {
     public class ClienteSingleton
     {
