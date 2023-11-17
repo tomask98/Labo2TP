@@ -32,6 +32,11 @@
             button1 = new Button();
             btnBuscar = new Button();
             dgvconsulta = new DataGridView();
+            ColPelicula = new DataGridViewTextBoxColumn();
+            ColGenero = new DataGridViewTextBoxColumn();
+            ColClasificacion = new DataGridViewTextBoxColumn();
+            ColIdioma = new DataGridViewTextBoxColumn();
+            ColEntradas = new DataGridViewTextBoxColumn();
             groupBox1 = new GroupBox();
             label3 = new Label();
             label2 = new Label();
@@ -40,23 +45,16 @@
             label1 = new Label();
             backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             label4 = new Label();
-            pictureBox1 = new PictureBox();
-            ColPelicula = new DataGridViewTextBoxColumn();
-            ColGenero = new DataGridViewTextBoxColumn();
-            ColClasificacion = new DataGridViewTextBoxColumn();
-            ColIdioma = new DataGridViewTextBoxColumn();
-            ColEntradas = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dgvconsulta).BeginInit();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
             button1.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(886, 500);
+            button1.Location = new Point(861, 493);
             button1.Name = "button1";
-            button1.Size = new Size(62, 28);
+            button1.Size = new Size(87, 35);
             button1.TabIndex = 0;
             button1.Text = "Salir";
             button1.UseVisualStyleBackColor = true;
@@ -88,6 +86,36 @@
             dgvconsulta.RowTemplate.Height = 25;
             dgvconsulta.Size = new Size(749, 226);
             dgvconsulta.TabIndex = 2;
+            // 
+            // ColPelicula
+            // 
+            ColPelicula.HeaderText = "Pelicula";
+            ColPelicula.Name = "ColPelicula";
+            ColPelicula.ReadOnly = true;
+            // 
+            // ColGenero
+            // 
+            ColGenero.HeaderText = "Genero";
+            ColGenero.Name = "ColGenero";
+            ColGenero.ReadOnly = true;
+            // 
+            // ColClasificacion
+            // 
+            ColClasificacion.HeaderText = "Clasificacion";
+            ColClasificacion.Name = "ColClasificacion";
+            ColClasificacion.ReadOnly = true;
+            // 
+            // ColIdioma
+            // 
+            ColIdioma.HeaderText = "Idioma";
+            ColIdioma.Name = "ColIdioma";
+            ColIdioma.ReadOnly = true;
+            // 
+            // ColEntradas
+            // 
+            ColEntradas.HeaderText = "Cantidad de entradas vendidas";
+            ColEntradas.Name = "ColEntradas";
+            ColEntradas.ReadOnly = true;
             // 
             // groupBox1
             // 
@@ -153,51 +181,12 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(261, 440);
+            label4.Font = new Font("Century Gothic", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(174, 457);
             label4.Name = "label4";
-            label4.Size = new Size(480, 15);
+            label4.Size = new Size(625, 17);
             label4.TabIndex = 4;
             label4.Text = "Esta consulta traera las peliculas mas vistas durante las vacaciones de verano o de invieno ";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(398, 458);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(196, 75);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
-            // 
-            // ColPelicula
-            // 
-            ColPelicula.HeaderText = "Pelicula";
-            ColPelicula.Name = "ColPelicula";
-            ColPelicula.ReadOnly = true;
-            // 
-            // ColGenero
-            // 
-            ColGenero.HeaderText = "Genero";
-            ColGenero.Name = "ColGenero";
-            ColGenero.ReadOnly = true;
-            // 
-            // ColClasificacion
-            // 
-            ColClasificacion.HeaderText = "Clasificacion";
-            ColClasificacion.Name = "ColClasificacion";
-            ColClasificacion.ReadOnly = true;
-            // 
-            // ColIdioma
-            // 
-            ColIdioma.HeaderText = "Idioma";
-            ColIdioma.Name = "ColIdioma";
-            ColIdioma.ReadOnly = true;
-            // 
-            // ColEntradas
-            // 
-            ColEntradas.HeaderText = "Cantidad de entradas vendidas";
-            ColEntradas.Name = "ColEntradas";
-            ColEntradas.ReadOnly = true;
             // 
             // FrmConsultarVacaciones
             // 
@@ -206,7 +195,6 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Zoom;
             ClientSize = new Size(960, 540);
-            Controls.Add(pictureBox1);
             Controls.Add(label4);
             Controls.Add(groupBox1);
             Controls.Add(dgvconsulta);
@@ -220,7 +208,6 @@
             ((System.ComponentModel.ISupportInitialize)dgvconsulta).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -238,7 +225,6 @@
         private Label label1;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Label label4;
-        private PictureBox pictureBox1;
         private DataGridViewTextBoxColumn ColPelicula;
         private DataGridViewTextBoxColumn ColGenero;
         private DataGridViewTextBoxColumn ColClasificacion;

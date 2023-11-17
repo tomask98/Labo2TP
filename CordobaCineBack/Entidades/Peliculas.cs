@@ -27,6 +27,7 @@ namespace CineCordobaBack.Entidades
             Genero = new Generos();
             Clasificacion = new Clasificaciones();
         }
+        
         public Peliculas(int peliculaid, string nombrepelicula, Generos genero, Idiomas idioma, Clasificaciones clasificacion)
         {
             Id_pelicula = peliculaid;
@@ -35,7 +36,12 @@ namespace CineCordobaBack.Entidades
             Idioma = idioma;
             Clasificacion = clasificacion;
         }
-
+        public Peliculas(int peliculaid, string nombrepelicula)
+        {
+            Id_pelicula = peliculaid;
+            Nombre_pelicula = nombrepelicula;
+        }
+        
 
         public override string ToString()
         {

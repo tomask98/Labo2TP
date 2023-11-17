@@ -13,5 +13,10 @@ namespace CordobaCineBack.Fachada.Interfaz
         public List<Generos>TraerGeneros();
 
         public List<DetalleComprobante> ObtenerConsultaVacacion(int genero, string vacacion);
+
+        public List<Sucursales> TraerSucursales();
+        public List<Peliculas> traerPeliculas();
+
+        public List<Comprobantes> ConsultarGanancia(int sucursal, int pelicula);
     }
 }

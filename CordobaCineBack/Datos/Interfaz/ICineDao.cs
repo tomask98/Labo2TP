@@ -12,5 +12,8 @@ namespace CordobaCineBack.Datos.Interfaz
     {
         List<Generos> ObtenerGeneros();
         public List<DetalleComprobante> ObtenerConsultaVacacion(int genero, string vacacion);
+        List<Sucursales> obtenerSucursales();
+        List<Peliculas> obtenerPeliculas();
+        List<Comprobantes> obtenerConsultarGanancia(int sucursal, int pelicula);
     }
 }

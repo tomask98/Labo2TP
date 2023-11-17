@@ -62,7 +62,7 @@ namespace CineFront.Presentacion
                 dgvconsulta.Rows.Clear();
                 await ConsultarDetalleVacaciones(genero, txtVacaciones.Text);
             }
-            
+
 
         }
 
@@ -74,12 +74,12 @@ namespace CineFront.Presentacion
             //    MessageBox.Show("Debe indicar en que temporada quiere realizar la busqueda", "Error.", MessageBoxButtons.OK, MessageBoxIcon.Error);
             //    v = false;
             //}
-             if(string.IsNullOrEmpty(txtVacaciones.Text) && txtVacaciones.Text != "verano" && txtVacaciones.Text != "invierno")
+            if (string.IsNullOrEmpty(txtVacaciones.Text) && txtVacaciones.Text != "verano" && txtVacaciones.Text != "invierno")
             {
                 MessageBox.Show("Debe indicar si es temporada de verano o invierno", "Error.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 v = false;
             }
-            if(cboGenero.SelectedIndex == -1)
+            if (cboGenero.SelectedIndex == -1)
             {
                 MessageBox.Show("Debe seleccionar un genero", "Error.", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 v = false;

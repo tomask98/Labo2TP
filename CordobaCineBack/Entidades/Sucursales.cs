@@ -11,14 +11,17 @@ namespace CineCordobaBack.Entidades
     {
         public int Id_sucursal { get; set; }
         public string Nombre_Sucursal { get; set; }
-        public Barrios BarrioId { get; set; }
+        
 
         public Sucursales(int id_sucursal, string nombresucursal)
         {
             Id_sucursal = id_sucursal;
             Nombre_Sucursal = nombresucursal;
         }
-
+        public Sucursales()
+        {
+            
+        }
 
 
         public override string ToString()

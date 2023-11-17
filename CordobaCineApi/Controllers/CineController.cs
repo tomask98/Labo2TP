@@ -50,7 +50,51 @@ namespace CordobaCineApi.Controllers
                 return StatusCode(500, "Error interno! Intente luego.");
             }
         }
+        [HttpGet("/Sucursales")]
+        public IActionResult GetSucursales()
+        {
+            List<Sucursales> lsuc = null;
+            try
+            {
+                lsuc = app.TraerSucursales();
+                return Ok(lsuc);
+            }
+            catch (Exception)
+            {
 
+                return StatusCode(500, "Error Interno");
+            }
+        }
+        [HttpGet("/Peliculas")]
+        public IActionResult GetPeliculas()
+        {
+            List<Peliculas> lpeli = null;
+            try
+            {
+                lpeli = app.traerPeliculas();
+                return Ok(lpeli);
+            }
+            catch (Exception)
+            {
+
+                return StatusCode(500, "Error Interno");
+            }
+        }
+
+        [HttpGet("/Ganancia")]
+        public IActionResult GetGanancias(int sucursal, int peliculas)
+        {
+            List<Comprobantes> lstdeta;
+            try
+            {
+                lstdeta = app.ConsultarGanancia(sucursal, peliculas);
+                return Ok(lstdeta);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500, "Error interno! Intente luego.");
+            }
+        }
 
     }
 }

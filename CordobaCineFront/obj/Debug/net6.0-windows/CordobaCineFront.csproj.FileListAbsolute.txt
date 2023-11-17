@@ -39,3 +39,5 @@ D:\Desktop\TUP\1° año\2° Semestre\labo 2\TrabajoPracticoGrupo9\CordobaCineFro
 D:\Desktop\TUP\1° año\2° Semestre\labo 2\TrabajoPracticoGrupo9\CordobaCineFront\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 D:\Desktop\TUP\1° año\2° Semestre\labo 2\TrabajoPracticoGrupo9\CordobaCineFront\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\Desktop\TUP\1° año\2° Semestre\labo 2\TrabajoPracticoGrupo9\CordobaCineFront\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Desktop\TUP\1° año\2° Semestre\labo 2\TrabajoPracticoGrupo9\CordobaCineFront\obj\Debug\net6.0-windows\CordobaCineFront.Properties.Resources.resources
+D:\Desktop\TUP\1° año\2° Semestre\labo 2\TrabajoPracticoGrupo9\CordobaCineFront\obj\Debug\net6.0-windows\CineCordobaFront.Presentacion.ConsultaGanancia.resources

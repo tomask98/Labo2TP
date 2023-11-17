@@ -28,5 +28,20 @@ namespace CordobaCineBack.Fachada.Implementacion
         {
             return cineDao.ObtenerConsultaVacacion(genero, vacacion);
         }
+
+        public List<Sucursales> TraerSucursales()
+        {
+            return cineDao.obtenerSucursales();
+        }
+
+        public List<Peliculas> traerPeliculas()
+        {
+            return cineDao.obtenerPeliculas();
+        }
+
+        public List<Comprobantes> ConsultarGanancia(int sucursal, int pelicula)
+        {
+            return cineDao.obtenerConsultarGanancia(sucursal,pelicula);
+        }
     }
 }
