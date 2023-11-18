@@ -18,5 +18,7 @@ namespace CordobaCineBack.Fachada.Interfaz
         public List<Peliculas> traerPeliculas();
 
         public List<Comprobantes> ConsultarGanancia(int sucursal, int pelicula);
+        public List<Comprobantes> TraerComprobantes(DateTime fechaDesde, string ts1, string ts2, string ts3, string ts4,
+                                  string ts5, string ts6, string g1, string g2, string g3, string g4, string g5, string g6);
     }
 }

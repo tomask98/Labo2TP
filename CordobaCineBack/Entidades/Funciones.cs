@@ -31,7 +31,9 @@ namespace CineCordobaBack.Entidades
         public Funciones()
         {
             Pelicula = new Peliculas();
-            
+            SalasId = new Salas();
+            HorarioID = new Horarios();
+
 
         }
     }

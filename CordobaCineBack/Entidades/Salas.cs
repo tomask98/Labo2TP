@@ -9,10 +9,12 @@ namespace CineCordobaBack.Entidades
     public class Salas
     {
         public int SalaId { get; set; }
-        public TipoSalas TipoSalaId { get; set; }
+        public TipoSalas TipoSala { get; set; }
 
         public Salas()
         {
+            SalaId = 0;
+            TipoSala = new TipoSalas();
         }
     }
 }

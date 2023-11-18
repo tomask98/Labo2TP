@@ -14,6 +14,17 @@ namespace CineCordobaBack.Entidades
 
         public Vendedores()
         {
+            VendedorId = 0;
+            Nombre = string.Empty;
+            Apellido = string.Empty;
+        }
+
+        public Vendedores(int vendId, string nombre, string apellido)
+        {
+            VendedorId = vendId;
+            Nombre = nombre;
+            Apellido = apellido;
+
         }
     }
 }

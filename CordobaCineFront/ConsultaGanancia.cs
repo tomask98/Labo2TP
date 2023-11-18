@@ -82,7 +82,7 @@ namespace CineCordobaFront.Presentacion
             int pelicula = Convert.ToInt32(cboPelicula.SelectedValue);
 
             await ObtenerConsultaGanancia(sucursal, pelicula);
-
+            //dataGridView1.Rows.Clear();
 
         }
         private async Task ObtenerConsultaGanancia(int sucursal, int pelicula)
@@ -92,7 +92,7 @@ namespace CineCordobaFront.Presentacion
             List<Comprobantes> lstcomp;
             lstcomp = JsonConvert.DeserializeObject<List<Comprobantes>>(data);
 
-               
+
             foreach (Comprobantes oComprobante in lstcomp)
             {
                 dataGridView1.Rows.Add(new object[] { oComprobante.Sucursal.Nombre_Sucursal,

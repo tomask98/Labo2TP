@@ -17,5 +17,12 @@ namespace CineCordobaBack.Entidades
             Id_sala = id_sala;
             Tipo=tipo;
         }
+        public TipoSalas()
+        {
+            Id_sala = 0;
+            Tipo = string.Empty;
+            Precio = 0;
+
+        }
     }
 }
